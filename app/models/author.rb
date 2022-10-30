@@ -7,5 +7,9 @@ class Author
   
   end
 
+  def articles
+    Article.all.select{|article|article.author == @name}
+  end
+
 
 end
